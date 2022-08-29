@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 
+/* 태그의 초기화 */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, button, abbr, acronym, address, code, del, 
 dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
 td, hr{margin:0;padding:0;font-size:100%;box-sizing: border-box;}
@@ -25,12 +26,14 @@ a:hover {text-decoration:none}
 .blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
 html,body{overflow:hidden;height:100%;}
 
+/* 여기서부터 css 사용자 정의 시작 */
 /*layout*/
 /* 오른쪽 padding을 180px */
 #wrap{width:100%; height:100%; padding-right:180px;}
 /* 보이지 않게 함 */
 /* TEST : font-size 변경시 상단에 보이는 것이 확인됨. */
 #wrap > h1{font-size:0;}
+/* 바로 밑 자식 */
 /* 로고의 위치를 절대위치로 지정 */
 /* TEST : right/top의 위치 변경 후 확인. */
 header .logo_box{position:absolute; right:35px; top:75px;}
@@ -38,7 +41,10 @@ header .logo_box{position:absolute; right:35px; top:75px;}
 /* TEST : width의 px를 변경 후 확인 */
 header .logo_box img{width:100px;}
 /* header는 오른쪽/위로 붙여서 표현 */
-#wrap header{width:180px; height:100%; position:fixed; right:0px; top:0px; background:url(../images/menu_bg1.png) repeat-y; z-index:11;}
+/* z-index는 z축의 인덱스 . 포토샵의 상위layer같은 의미. 인덱스가 높을수록 그림이 위에 위치*/
+#wrap header{width:180px; height:100%; position:fixed; right:0px; top:0px; 
+    background:url(../images/menu_bg1.png) repeat-y; z-index:11;}
+/* width:180px; height:100%;인것 내에서 width:100%; height:100%를 의미.(자손) */    
 #wrap header nav{width:100%; height:100%;} 
 /* flex이면서 밑으로 나열(column), 위아래가 같도록 정렬(center) */
 /* TEST : flex-direction(row,row-reverse,column,column-reverse) 변경 */
@@ -47,7 +53,7 @@ header .logo_box img{width:100px;}
 /* margin은 시계방향 top, right, bottom, left*/
 /* TEST : margin 값 변경하면서 확인. */
 /* TEST : position : absolute로 변경 TEST */
-#wrap header nav ul li{margin:0px 0px 10px 30px; padding-left:15px; position:relative;} 
+#wrap header nav ul li{margin:0px 0px 10px 30px; padding-left : 15px; position:relative;} 
 /* TEST : font관련값 변경하면서 확인. ling-height 변경하면서 확인 */
 #wrap header nav ul li a{font-size:16px; color:#fff; font-weight:600; line-height:30px;}
 /* 가상요소를 통해서 점을 찍어서 표현 */
@@ -58,17 +64,18 @@ header .logo_box img{width:100px;}
 /* 4장에서 확인. on class의 의미는? JQuery에서 선택이 된 것을 ON으로 처리하고 있음 */
 /* li tag(메뉴명)에 대한 mouseover 처리 */
 /* TEST : 색상 변경 후 확인할 것. */
-#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color:#ed3140;} 
+#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color:#5331ed;} 
 /* 점에 대한 mouseover 처리 */
-#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:#ed3140;}
+#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:#5331ed;}
 
-footer{width:180px; position:fixed; right:0px; bottom:0px; padding:0px 20px 30px 20px; font-size:11px; color:#7e7e7e; z-index:12;}
+footer{width:180px; position:fixed; right:0px; bottom:0px; padding:0px 20px 30px 20px; 
+    font-size:11px; color:#7e7e7e; z-index:12;}
 footer address{padding:0px 0px 15px 0px;}
 /* transition은 애니매이션의 시간 (0.4초) */
 /* top(-31px)은 위의 영역을 침범하여 표시한 것임. */
 /* TEST : transition의 값을 5초로 변경 후 확인. */
 /* TEST : top -31 ==> 0px로 변경 후 확인 */
-footer > a{display:block; width:16px; height:16px; position:absolute; top:-31px; transition:.4s;} 
+footer > a{display:block; width:16px; height:16px; position:absolute; top:-31px; transition:0.4s;} 
 /* TEST : no-repeat 제거 후 확인 */
 footer > a.face{background:url(../images/social_b_facebook.png) no-repeat; right:18px;} 
 footer > a.face:hover{background:url(../images/social_b_facebook_hover.png) no-repeat;} 
