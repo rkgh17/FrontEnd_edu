@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nums = new Array();
+        nums.push(3);
+        nums.push(13);
+        nums.push(25);
+
+        console.log(nums);
+
+        let n1 = nums.pop();
+        console.log(nums);
+        console.log("nums : ",n1);
+        console.log("n1 : ",n1);
+
+        // 자바스크립트에서 배열은 여러가지 형태가 동시에 들어갈 수 있다.
+        let nums2 = new Array(2,3,"hello",7);
+        console.log(nums2);
+        console.log(nums2[1]);
+        console.log(nums2[2]);
+
+        let nums3 = new Array(2,3,"hello",7,new Array(2,3,4));
+        console.log(nums3);
+        console.log(nums3[4]);
+        console.log(nums3[4][1]);
+
+        // nums2.splice(2); //두번째 이후 모두 삭제
+        // console.log(nums2);
+        // nums2.splice(2,1); //두번째 이후 하나만 삭제
+        // console.log(nums2);
+        nums2.splice(2,1,"HUMAN"); //두번째 이후 하나 삭제 후 "HUMAN"추가
+        console.log(nums2);
+
+        nums2.splice(2,0,"COMP");
+        console.log(nums2); // 두번째 이후 0번째 삭제 후(삭제되는게 없음) "COMP"추가
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
