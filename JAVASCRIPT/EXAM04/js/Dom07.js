@@ -23,16 +23,23 @@ window.addEventListener("load",
 
         inputButton.onclick = function(){
             let trNode = noticeList.querySelector("tbody tr");
-            let cloneNode = trNode.cloneNode(true);
-            tbodyNode.appendChild(cloneNode);
+            let cloneNode1 = trNode.cloneNode(true);
+            // let cloneNode2 = trNode.cloneNode(true);
+            tbodyNode.appendChild(cloneNode1);
+            // tbodyNode.appendChild(cloneNode2);
             
-            let tdsNode = cloneNode.querySelectorAll("td");
-            console.log(tdsNode);
+            let tdsNode1 = cloneNode1.querySelectorAll("td");
+            // let tdsNode2 = cloneNode2.querySelectorAll("td");
 
-            tdsNode[0].textContent = notices[0].id;
-            tdsNode[1].textContent = notices[0].title;
-            tdsNode[2].textContent = notices[0].content;
-            tdsNode[3].textContent = notices[0].writter;
+            tdsNode1[0].textContent = notices[0].id;
+            tdsNode1[1].textContent = notices[0].title;
+            tdsNode1[2].textContent = notices[0].content;
+            tdsNode1[3].textContent = notices[0].writter;
+
+            // tdsNode2[0].textContent = notices[1].id;
+            // tdsNode2[1].textContent = notices[1].title;
+            // tdsNode3[2].textContent = notices[1].content;
+            // tdsNode2[3].textContent = notices[1].writter;
         };
     }
 );
