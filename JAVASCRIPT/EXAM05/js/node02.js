@@ -33,19 +33,18 @@ window.addEventListener("load",
                 return;
             }
             let trs=[];
-            inputs[0].replaceWith
-            // for(let i = 0; i<inputs.length ; i++){
+            for(let i = 0; i<inputs.length ; i++){
 
-            //     // trs.push(inputs[i].parentElement.parentElement);
-            //     // // inputs => input 태그
-            //     // // inputs[i].parentElement ==> td태그
-            //     // // inputs[i].parentElement.parentElement ==> tr태그
-            //     // // trs.push함수는 tr태그를 자손까지 모두 카피해서 trs에 반영.
+                trs.push(inputs[i].parentElement.parentElement);
+                // // inputs => input 태그
+                // // inputs[i].parentElement ==> td태그
+                // // inputs[i].parentElement.parentElement ==> tr태그
+                // // trs.push함수는 tr태그를 자손까지 모두 카피해서 trs에 반영.
 
-            //     // let cloneNode = trs[0].cloneNode(true);
-            //     // // 자손까지 모두 선택 후 clone
-            //     // trs[1].replaceWith(cloneNode);
-            // }
+            }
+            let cloneNode = trs[0].cloneNode(true);
+            trs[1].replaceWith(cloneNode);
+            trs[0].replaceWith(trs[1]);
             
 
         };
