@@ -27,6 +27,15 @@
             $(".wrap-1 p").eq(1).removeClass("active");
             // <p class="active">내용2</p>    ==>   <p>내용2</p>
             $(".active").next("p").css("background-color","pink");
+
+            // 객체조작2
+            $(".wrap-1 p").eq(1).addClass("active");
+            $(".active").next("p").css("background-color","pink");
+
+            // 객체조작3
+            // 강제 태그 추가 (append : 가장 밑에 추가)
+            $(".wrap-1").append("<p>휴먼교육센터</p>");
+            $(".wrap-2").append("<p>휴먼교육센터</p>");
         });
     </script>
 </head>
