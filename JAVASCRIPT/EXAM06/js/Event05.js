@@ -19,9 +19,8 @@ window.addEventListener("load", function(){
 
     container.onmousemove=function(e){
         if(dragging){
-            box.style.left = e.x - boxXY.x + "px";
-            console.log(box.style.left);
-            box.style.top = e.y - boxXY.y + "px";
+            box.style.left = (e.x - boxXY.x) + "px";
+            box.style.top = (e.y - boxXY.y) + "px";
         }
     };
 
