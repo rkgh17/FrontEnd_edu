@@ -24,8 +24,8 @@
     onclick="
     // fetch 후 callback처리시 response를 받아오는데
     // response의 text를 확인하는 작업
-    // text는 성공하였을 경우 요청한 web문서가 회신됨.
-        fetch('../EXAM01/CSS.html').then(function(response){
+    // 요청한 Web문서는 text라는 변수에 담겨서 회신.
+        fetch('txt/CSS').then(function(response){
             response.text().then(
                 function(text){
                     alert(text);
@@ -36,6 +36,26 @@
         })
         
     "/>
+
+<input type="button" value="click article"
+onclick="
+    fetch('txt/JS').then(function(response){
+        response.text().then(
+            function(text){
+                if(response.ok = true){
+                    document.querySelector('article').innerHTML=text;
+                }else{
+                    console.log('error');
+                }
+            }
+        )            
+    })
+    
+"/>
+
+    <article>
+
+    </article>
 
 </body>
 </html>
