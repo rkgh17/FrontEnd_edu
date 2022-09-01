@@ -35,8 +35,8 @@ header .logo_box img{width:100px;}
 #wrap header nav ul li{margin:0px 0px 10px 30px; padding-left:15px; position:relative;} 
 #wrap header nav ul li a{font-size:16px; color:#fff; font-weight:600; line-height:30px;}
 #wrap header nav ul li:after{content:""; display:block; width:5px; height:5px; border-radius:50%; background:#fff; position:absolute; left:0px; top:13px;}
-#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color:#ed3140;} 
-#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:#ed3140;}
+#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color: #ed3140;} 
+#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:blue;}
 footer{width:180px; position:fixed; right:0px; bottom:0px; padding:0px 20px 30px 20px; font-size:11px; color:#7e7e7e; z-index:12;}
 footer address{padding:0px 0px 15px 0px;}
 footer > a{display:block; width:16px; height:16px; position:absolute; top:-31px; transition:.4s;} 
