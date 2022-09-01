@@ -86,6 +86,7 @@ footer > a.instar:hover{background:url(../images/social_b_instar_hover.png) no-r
 /* content this가 되면 h2가 살아남 (opacity 1이 됨) */
 /* 회사소개 시간을 조정함. transition-delay는 시작하기 전 대기시간임*/
 #container .content.this h2{height:auto; padding:30px 0 20px 50px; color:#000; position:relative; background:#fff; font-size:28px; font-weight:400; opacity:1; transition:all .6s; transition-delay:1.2s;}
+/* 제목의 빨간색 줄 */
 #container .content.this h2:after{content:""; width:100%; height:8px; background:#ed3140; position:absolute; left:0; bottom:0;}
 #container .content .conbox .content_wrap{opacity:0;}
 /* transition-delay가 0.8초인 이유는 앞쪽의 이동시간을 고려해야 하기 때문임 */

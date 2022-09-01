@@ -4,6 +4,7 @@ $(document).ready(function(){
 		$("#container").css("max-width", "100%")
 		// 선택된 메뉴의 data-rol의 값 회신(menu1)
 		var id=$(this).attr("data-rol");    
+		// id = "menu1" / "menu2"
 		console.log(id)
 		// li Tag 모두 on class 삭제 (비활성화)
 		$("nav li").removeClass("on");    
