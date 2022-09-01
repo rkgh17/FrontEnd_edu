@@ -35,8 +35,8 @@ header .logo_box img{width:100px;}
 #wrap header nav ul li{margin:0px 0px 10px 30px; padding-left:15px; position:relative;} 
 #wrap header nav ul li a{font-size:16px; color:#fff; font-weight:600; line-height:30px;}
 #wrap header nav ul li:after{content:""; display:block; width:5px; height:5px; border-radius:50%; background:#fff; position:absolute; left:0px; top:13px;}
-#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color: #ed3140;} 
-#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:blue;}
+#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color:#ed3140;} 
+#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:#ed3140;}
 footer{width:180px; position:fixed; right:0px; bottom:0px; padding:0px 20px 30px 20px; font-size:11px; color:#7e7e7e; z-index:12;}
 footer address{padding:0px 0px 15px 0px;}
 footer > a{display:block; width:16px; height:16px; position:absolute; top:-31px; transition:.4s;} 
@@ -48,11 +48,6 @@ footer > a.instar{background:url(../images/social_b_instar.png) no-repeat; right
 footer > a.instar:hover{background:url(../images/social_b_instar_hover.png) no-repeat;}
 #container{width:100%; height:100%; position:relative; max-width:1200px; margin:0 auto;} 
 #container .content{width:25%; height:100%; position:absolute;} 
-#container .content.this{width: 100%; left: 0%;}
-#container .content.prev{width: 100%; left: -100%;}
-#container .content.next{width: 100%; left: 100%;}
-#container .content.this:before, #container .content.this:after,
-#container .content.this .conbox:before{opacity: 0;}
 #container #menu1{left:0%; background:url(../images/content_bg1.png) repeat;} 
 #container #menu2{left:25%; background:url(../images/content_bg2.png) repeat;} 
 #container #menu3{left:50%; background:url(../images/content_bg3.png) repeat;} 
