@@ -95,7 +95,7 @@ footer > a.instar:hover{background:url(../images/social_b_instar_hover.png) no-r
 .text_box:nth-child(odd){text-align: left;}
 .text_box:nth-child(even){text-align: right;}
 .text_box:nth-child(1):after{content: ""; display: block; width: 206px; height: 100%; position: absolute; right: 0; top: 0; background:url(../images/content_img1.png)no-repeat right top; background-size: 206px auto;}
-.text_box:nth-child(1) p{width: 100%; padding-right: 206px;}
+.text_box:nth-child(1) p{width: 100%; padding-right: 206px; }
 
 
 
