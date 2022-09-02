@@ -95,7 +95,50 @@
 
       .next-icon{
         background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
-    }
+      }
+
+      /* .carousel-indicators{
+        position:absolute;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:2;
+        display:flex;
+        justify-content:center;
+        padding:0;
+        margin-right:15%;
+        margin-bottom:1rem;
+        margin-left:15%;
+        list-style:none
+
+      }.carousel-indicators [data-bs-target]{
+        box-sizing:content-box;
+        flex:0 1 auto;
+        width:30px;
+        height:3px;
+        padding:0;
+        margin-right:3px;
+        margin-left:3px;
+        text-indent:-999px;
+        cursor:pointer;
+        background: color #000;;
+        background-clip:padding-box;
+        border:0;border-top:10px solid transparent;
+        border-bottom:10px solid transparent;
+        opacity:.5;transition:opacity .6s ease}
+        @media (prefers-reduced-motion:reduce){
+          .carousel-indicators [data-bs-target]{transition:none}
+        }
+        .carousel-indicators .active{
+          opacity:1
+        }
+        .carousel-caption
+        {position:absolute;right:15%;bottom:1.25rem;left:15%;padding-top:1.25rem;padding-bottom:1.25rem;color:#fff;text-align:center
+        }
+        .carousel-dark .carousel-control-next-icon,.carousel-dark .carousel-control-prev-icon{
+          filter:invert(1) grayscale(100)
+        }
+        .carousel-dark .carousel-indicators [data-bs-target]{background-color:#000} */
     </style>
 
     
@@ -136,9 +179,9 @@
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button style="background-color: #000;" type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button style="background-color: #000;" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button style="background-color: #000;" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -197,23 +240,23 @@
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <h2 class="fw-normal">PIC1</h2>
+        <p>content</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <h2 class="fw-normal">PIC2</h2>
+        <p>content</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2 class="fw-normal">PIC3</h2>
+        <p>content</p>
+        <p ><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
